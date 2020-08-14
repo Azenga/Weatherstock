@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Weatherstock</string>
+
+    <string name="today_text">Today</string>
+    <string name="week_text">Week</string>
+    <string name="settings_text">Settings</string>
+
 </resources>

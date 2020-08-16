@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import ke.co.propscout.weatherstock.data.db.dao.CurrentWeatherDao
 import ke.co.propscout.weatherstock.data.db.entity.CurrentWeatherEntry
 
@@ -12,6 +13,7 @@ import ke.co.propscout.weatherstock.data.db.entity.CurrentWeatherEntry
     version = 1,
     exportSchema = false
 )
+@TypeConverters(WeatherConverters::class)
 abstract class WeatherstackDatabase : RoomDatabase() {
 
     abstract fun getCurrentWeatherDao(): CurrentWeatherDao

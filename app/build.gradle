@@ -22,6 +22,11 @@ android {
         dataBinding = true
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
     kotlinOptions{
         jvmTarget = '1.8'
     }
@@ -58,5 +63,13 @@ dependencies {
 
     //Google Material Design
     implementation "com.google.android.material:material:$material_version"
+
+    //Retrofit (HTTP Client)
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    //Coroutines dependency
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
 }

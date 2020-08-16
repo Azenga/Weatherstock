@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="response"
+            type="String" />
     </data>
 
     <FrameLayout
@@ -14,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hello" />
+            android:text="@{response, default=@string/today_text}" />
 
     </FrameLayout>
 </layout>

@@ -1,4 +1,4 @@
-package ke.co.propscout.weatherstock.data
+package ke.co.propscout.weatherstock.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName
